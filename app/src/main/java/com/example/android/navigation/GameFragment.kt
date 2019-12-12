@@ -95,7 +95,7 @@ class GameFragment : Fragment() {
                     if (questionIndex < numQuestions) {
                         currentQuestion = questions[questionIndex]
                         setQuestion()
-                        binding.invalidateAll()§
+                        binding.invalidateAll()
                     } else {
                         // We've won!  Navigate to the gameWonFragment.
                         view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(numQuestions,questionIndex))
